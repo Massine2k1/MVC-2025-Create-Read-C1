@@ -1,5 +1,9 @@
 # MVC-2025-Create-Read
 
+## Raison d'être de cet exercice commun
+
+Nous devons voir le CRUD complet avec admin pour dans deux semaines, ce site servira donc de base pour atteindre cet objectif.
+
 ## Configuration
 
 Importation du fichier `data/mvc2025createread-with-datas.sql` dans votre base de données MariaDB.
