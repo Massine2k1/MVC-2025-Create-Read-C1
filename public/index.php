@@ -1,5 +1,5 @@
 <?php
-# exemple5MVC/public/index.php
+# public/index.php
 
 /*
  * Contrôleur frontal

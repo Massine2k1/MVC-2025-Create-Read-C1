@@ -1,1 +1,2 @@
 <?php
+# model/ArticleModel.php
