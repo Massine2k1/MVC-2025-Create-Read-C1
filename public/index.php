@@ -15,7 +15,9 @@ try{
     // instanciation de PDO
     $db = new PDO(DB_DSN,DB_LOGIN,DB_PWD,
     [
+        // affichage des erreurs
         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+        // attribue les valeurs du fetch par défaut en tableau associatif
         PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
     ]);
 
@@ -40,3 +42,4 @@ var_dump($_POST);
 
 
 // bonne pratique
+$db=null;
