@@ -91,6 +91,13 @@
                 <!-- Blog Posts Section -->
                 <section id="blog-posts" class="blog-posts section">
                     <div class="col-lg-6">
+                        <?php
+                        if(isset($error)):
+                        ?>
+                        <h3 class="text-danger"><?=$error?></h3>
+                        <?php
+                        endif;
+                        ?>
                         <form action="" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
                             <div class="row gy-4">
 
