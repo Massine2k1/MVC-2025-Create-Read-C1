@@ -102,7 +102,7 @@
                                     <input type="password" class="form-control" name="user_pwd" placeholder="Mot de passe" required="">
                                 </div>
                                 <div class="col-md-6 ">
-                                    <input type="submit" class="form-control" name="user_pwd" value="se connecter">
+                                    <input type="submit" class="form-control"  value="se connecter">
                                 </div>
 
                 </section><!-- /Blog Posts Section -->
