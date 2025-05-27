@@ -214,6 +214,7 @@
                     </div><!--/Search Widget -->
 
                     <!-- Categories Widget -->
+                    <!--
                     <div class="categories-widget widget-item">
 
                         <h3 class="widget-title">Categories</h3>
@@ -226,9 +227,11 @@
                             <li><a href="#">Educaion <span>(14)</span></a></li>
                         </ul>
 
-                    </div><!--/Categories Widget -->
+                    </div>
+                    --><!--/Categories Widget -->
 
                     <!-- Recent Posts Widget -->
+                    <!--
                     <div class="recent-posts-widget widget-item">
 
                         <h3 class="widget-title">Recent Posts</h3>
@@ -236,46 +239,48 @@
                         <div class="post-item">
                             <img src="assets/img/blog/blog-recent-1.jpg" alt="" class="flex-shrink-0">
                             <div>
-                                <h4><a href="blog-details.html">Nihil blanditiis at in nihil autem</a></h4>
+                                <h4><a href="#">Nihil blanditiis at in nihil autem</a></h4>
                                 <time datetime="2020-01-01">Jan 1, 2020</time>
                             </div>
-                        </div><!-- End recent post item-->
+                        </div>
+
 
                         <div class="post-item">
                             <img src="assets/img/blog/blog-recent-2.jpg" alt="" class="flex-shrink-0">
                             <div>
-                                <h4><a href="blog-details.html">Quidem autem et impedit</a></h4>
+                                <h4><a href="#">Quidem autem et impedit</a></h4>
                                 <time datetime="2020-01-01">Jan 1, 2020</time>
                             </div>
-                        </div><!-- End recent post item-->
-
+                        </div>
                         <div class="post-item">
                             <img src="assets/img/blog/blog-recent-3.jpg" alt="" class="flex-shrink-0">
                             <div>
-                                <h4><a href="blog-details.html">Id quia et et ut maxime similique occaecati ut</a></h4>
+                                <h4><a href="#">Id quia et et ut maxime similique occaecati ut</a></h4>
                                 <time datetime="2020-01-01">Jan 1, 2020</time>
                             </div>
-                        </div><!-- End recent post item-->
+                        </div>
 
                         <div class="post-item">
                             <img src="assets/img/blog/blog-recent-4.jpg" alt="" class="flex-shrink-0">
                             <div>
-                                <h4><a href="blog-details.html">Laborum corporis quo dara net para</a></h4>
+                                <h4><a href="#">Laborum corporis quo dara net para</a></h4>
                                 <time datetime="2020-01-01">Jan 1, 2020</time>
                             </div>
-                        </div><!-- End recent post item-->
+                        </div>
 
                         <div class="post-item">
                             <img src="assets/img/blog/blog-recent-5.jpg" alt="" class="flex-shrink-0">
                             <div>
-                                <h4><a href="blog-details.html">Et dolores corrupti quae illo quod dolor</a></h4>
+                                <h4><a href="#">Et dolores corrupti quae illo quod dolor</a></h4>
                                 <time datetime="2020-01-01">Jan 1, 2020</time>
                             </div>
-                        </div><!-- End recent post item-->
+                        </div>
 
-                    </div><!--/Recent Posts Widget -->
+                    </div>
+                    --><!--/Recent Posts Widget -->
 
                     <!-- Tags Widget -->
+                    <!--
                     <div class="tags-widget widget-item">
 
                         <h3 class="widget-title">Tags</h3>
@@ -293,7 +298,8 @@
                             <li><a href="#">Marketing</a></li>
                         </ul>
 
-                    </div><!--/Tags Widget -->
+                    </div>
+                    --><!--/Tags Widget -->
 
                 </div>
 
@@ -327,7 +333,7 @@
         <div class="row gy-4">
             <div class="col-lg-4 col-md-6 footer-about">
                 <a href="index.html" class="d-flex align-items-center">
-                    <span class="sitename">FlexStart</span>
+                    <span class="sitename">Classe 1</span>
                 </a>
                 <div class="footer-contact pt-3">
                     <p>A108 Adam Street</p>
