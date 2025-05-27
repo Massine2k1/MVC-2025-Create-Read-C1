@@ -22,4 +22,9 @@ if(!isset($_GET['pageChanger'])){
     // chargement de la vue
     require "../view/about.html.php";
 
+// page connexion PAS visible par tous !
+}elseif ($_GET['pageChanger']==="login"){
+    // chargement de la vue
+    require "../view/connexion.html.php";
+
 }

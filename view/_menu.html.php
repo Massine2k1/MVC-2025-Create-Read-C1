@@ -26,6 +26,7 @@
         <?php
         if(isset($_SESSION['user_name'])):
         ?>
+            <li><a href="./?pageChanger=admin">Administration</a></li>
         <li><a href="./?pageChanger=profile">Profil de <?= $_SESSION['user_name'] ?></a></li>
             <li><a href="./?pageChanger=disconnect">Déconnexion</a></li>
         <?php

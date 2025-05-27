@@ -1,5 +1,5 @@
 <?php
-# view/about.html.php
+# view/connexion.html.php
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -7,7 +7,7 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Groupe 1 | A propos de nous </title>
+    <title>Groupe 1 | Connexion </title>
     <meta name="description" content="">
     <meta name="keywords" content="">
 
@@ -65,9 +65,9 @@
             <div class="container">
                 <div class="row d-flex justify-content-center text-center">
                     <div class="col-lg-8">
-                        <h1>Groupe 1 | A propos de nous</h1>
+                        <h1>Groupe 1 | Connexion</h1>
                         <p class="mb-0">Meilleur groupe que le CF2m n'a jamais eu.</p>
-                        <h2 class="p-2">A propos de nous</h2>
+                        <h2 class="p-2">Veuillez vous connecter</h2>
                     </div>
                 </div>
             </div>
@@ -90,7 +90,20 @@
 
                 <!-- Blog Posts Section -->
                 <section id="blog-posts" class="blog-posts section">
+                    <div class="col-lg-6">
+                        <form action="" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+                            <div class="row gy-4">
 
+                                <div class="col-md-6">
+                                    <input type="text" name="user_login" class="form-control" placeholder="Votre login" required>
+                                </div>
+
+                                <div class="col-md-6 ">
+                                    <input type="password" class="form-control" name="user_pwd" placeholder="Mot de passe" required="">
+                                </div>
+                                <div class="col-md-6 ">
+                                    <input type="submit" class="form-control" name="user_pwd" value="se connecter">
+                                </div>
 
                 </section><!-- /Blog Posts Section -->
 
