@@ -7,7 +7,7 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Groupe 1 | Accueil </title>
+    <title>Groupe 1 | A propos de nous </title>
     <meta name="description" content="">
     <meta name="keywords" content="">
 
@@ -65,35 +65,20 @@
             <div class="container">
                 <div class="row d-flex justify-content-center text-center">
                     <div class="col-lg-8">
-                        <h1>Groupe 1</h1>
+                        <h1>Groupe 1 | A propos de nous</h1>
                         <p class="mb-0">Meilleur groupe que le CF2m n'a jamais eu.</p>
-                        <h2 class="p-2">Accueil</h2>
+                        <h2 class="p-2">A propos de nous</h2>
                     </div>
                 </div>
             </div>
         </div>
         <nav class="breadcrumbs">
             <div class="container">
-                <?php
-                if(empty($articles)):
-                ?>
-                <h4>Pas encore d'article publié</h4>
-                <?php
-                else:
-                    $nbArticles = count($articles);
-                    $pluriel = $nbArticles>1 ? "s" : "";
-                    /*
-                     if($nbArticles>1){
-                        $pluriel = "s";
-                     }else{
-                        $pluriel = "";
-                     }
-                     */
-                ?>
-                    <h4>Il y a <?=$nbArticles?> article<?=$pluriel?> publié<?=$pluriel?></h4>
-                <?php
-                endif;
-                ?>
+                <div class="row">
+                    <div class="col-12">
+                        Le Groupe 1 est une équipe dynamique et passionnée de développeurs web hautement qualifiés, spécialisés dans la création de solutions numériques performantes, innovantes et adaptées aux besoins de nos clients. Notre engagement envers la qualité, la collaboration et les technologies de pointe fait de nous un partenaire de choix pour vos projets web.
+                    </div>
+                </div>
             </div>
         </nav>
     </div><!-- End Page Title -->
@@ -102,54 +87,10 @@
         <div class="row">
 
             <div class="col-lg-8">
-                <?php
-                foreach($articles as $article):
-                ?>
 
                 <!-- Blog Posts Section -->
                 <section id="blog-posts" class="blog-posts section">
 
-                    <div class="container">
-
-                        <div class="row gy-4">
-
-                            <div class="col-12">
-                                <article>
-
-                                    <div class="post-img">
-                                        <img src="assets/img/blog/blog-1.jpg" alt="" class="img-fluid">
-                                    </div>
-
-                                    <h2 class="title">
-                                        <a href="./?pageChanger=detailArticle&id=<?=$article['idarticle']?>"><?=$article['article_title']?></a>
-                                    </h2>
-
-                                    <div class="meta-top">
-                                        <ul>
-                                            <li class="d-flex align-items-center"><i class="bi bi-person"></i>
-                                                <a href="./?pageChanger=user&login=<?=$article['user_login']?>"><?=$article['user_name']?></a></li>
-                                            <li class="d-flex align-items-center"><i class="bi bi-clock"></i><?=$article['article_date_published']?> </li>
-
-                                        </ul>
-                                    </div>
-
-                                    <div class="content">
-                                        <p>
-                                            <?=cutTheText($article['article_text'])?>
-                                        </p>
-
-                                        <div class="read-more">
-                                            <a href="./?pageChanger=detailArticle&id=<?=$article['idarticle']?>">Lire la suite</a>
-                                        </div>
-                                    </div>
-
-                                </article>
-                            </div><!-- End post list item -->
-                            <?php
-                            endforeach;
-                            ?>
-
-                    </div>
 
                 </section><!-- /Blog Posts Section -->
 
@@ -374,7 +315,6 @@
 
 <!-- Vendor JS Files -->
 <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="assets/vendor/php-email-form/validate.js"></script>
 <script src="assets/vendor/aos/aos.js"></script>
 <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
 <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
@@ -388,5 +328,3 @@
 </body>
 
 </html>
-<?php
-var_dump($articles);
