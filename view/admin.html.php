@@ -110,16 +110,16 @@
                                 </div>
 
                                 <div class="col-md-12">
-                                    <input class="form-check-input" type="checkbox" name="article_is_published" class="form-control"  value="1">
+                                    <input class="form-check-input" type="checkbox" name="article_is_published" id="publishCheckbox" value="1">
                                     <label class="form-check-label" for="flexCheckDefault">
                                         Publié ?
                                     </label>
                                 </div>
-                                <div class="col-md-12 hiding">
-                                    <input class="" type="datetime-local" name="article_date_published" class="form-control"  value="1">
-                                    <label class="form-check-label" for="flexCheckDefault">
-                                        Date de publication
-                                    </label>
+                                <div class="col-md-12">
+                                    <div class="mb-3" id="dateContainer" style="display: none;">
+                                        <label for="publishDate" class="form-label">Date de publication :</label>
+                                        <input name="article_date_published" type="datetime-local" class="form-control" id="publishDate">
+                                    </div>
                                 </div>
 
                                 <div class="col-12 text-center">

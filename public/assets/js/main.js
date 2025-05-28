@@ -1,3 +1,14 @@
+
+/*
+Pour afficher la date de publication si on coche publié
+ */
+const checkbox = document.getElementById('publishCheckbox');
+const dateContainer = document.getElementById('dateContainer');
+
+checkbox.addEventListener('change', () => {
+  dateContainer.style.display = checkbox.checked ? 'block' : 'none';
+});
+
 /**
 * Template Name: FlexStart
 * Template URL: https://bootstrapmade.com/flexstart-bootstrap-startup-template/
