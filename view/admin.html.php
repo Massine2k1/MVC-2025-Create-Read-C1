@@ -1,5 +1,5 @@
 <?php
-# view/connexion.html.php
+# view/admin.html.php
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -7,7 +7,7 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Groupe 1 | Connexion </title>
+    <title>Groupe 1 | Admin </title>
     <meta name="description" content="">
     <meta name="keywords" content="">
 
@@ -65,9 +65,9 @@
             <div class="container">
                 <div class="row d-flex justify-content-center text-center">
                     <div class="col-lg-8">
-                        <h1>Groupe 1 | Connexion</h1>
+                        <h1>Groupe 1 | Admin </h1>
                         <p class="mb-0">Meilleur groupe que le CF2m n'a jamais eu.</p>
-                        <h2 class="p-2">Veuillez vous connecter</h2>
+                        <h2 class="p-2">Administration | création d'un nouvel article</h2>
                     </div>
                 </div>
             </div>
@@ -101,18 +101,38 @@
                         <form action="" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
                             <div class="row gy-4">
 
-                                <div class="col-md-6">
-                                    <input type="text" name="user_login" class="form-control" placeholder="Votre login" required>
+                                <div class="col-md-12">
+                                    <input type="text" name="article_title" class="form-control" placeholder="Votre titre" required>
                                 </div>
 
-                                <div class="col-md-6 ">
-                                    <input type="password" class="form-control" name="user_pwd" placeholder="Mot de passe" required="">
+                                <div class="col-12">
+                                    <textarea class="form-control" name="article_text" rows="8" placeholder="Message" required=""></textarea>
                                 </div>
-                                <div class="col-md-6 ">
-                                    <input type="submit" class="form-control"  value="se connecter">
+
+                                <div class="col-md-12">
+                                    <input class="form-check-input" type="checkbox" name="article_is_published" class="form-control"  value="1">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Publié ?
+                                    </label>
                                 </div>
+                                <div class="col-md-12 hiding">
+                                    <input class="" type="datetime-local" name="article_date_published" class="form-control"  value="1">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Date de publication
+                                    </label>
+                                </div>
+
+                                <div class="col-12 text-center">
+                                    <div class="loading">Loading</div>
+                                    <div class="error-message"></div>
+                                    <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                                    <button type="submit">Créer l'article</button>
+                                </div>
+
                             </div>
                         </form>
+
                 </section><!-- /Blog Posts Section -->
 
                 <!-- Blog Pagination Section -->
