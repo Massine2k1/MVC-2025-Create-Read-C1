@@ -1,10 +1,10 @@
 <?php
 # model/ArticleModel.php
 
-function addArticle(PDO $conn, array $datas, int $iduser)
+function addArticle(PDO $conn, array $datas, int $iduser): bool
 {
     // requête d'insertion
-    $sql = "INSERT INTO `article` (`article_title`,`article_text`,`article_date_published`, `article_is_published`,`user_iduser `) VALUES (?,?,?,?,?);";
+    $sql = "INSERT INTO `article` (`article_title`,`article_text`,`article_date_published`, `article_is_published`,`user_iduser`) VALUES (?,?,?,?,?);";
     // préparation de la requête
     $query = $conn->prepare($sql);
 
@@ -33,11 +33,17 @@ function addArticle(PDO $conn, array $datas, int $iduser)
     }
 
     // ICI
+    $title = htmlspecialchars(strip_tags(trim($datas['article_title'])),ENT_QUOTES);
+    $text = htmlspecialchars(strip_tags(trim($datas['article_text'])),ENT_QUOTES);
+
+    if(empty($title)||empty($text)) return false;
 
     try{
 
+        $query->execute([$title,$text,$datePublished,$isPublished,$iduser]);
+        return true;
     }catch (Exception $e){
-
+        die($e->getMessage());
     }
 }
 /**

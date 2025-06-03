@@ -98,7 +98,7 @@
                         <?php
                         endif;
                         ?>
-                        <form action="" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+                        <form action="" method="post" class="php-email-form" >
                             <div class="row gy-4">
 
                                 <div class="col-md-6">

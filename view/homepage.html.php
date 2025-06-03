@@ -58,7 +58,13 @@
 </header>
 
 <main class="main">
-
+    <?php
+    if(isset($_GET['message'])):
+        ?>
+        <h3 class="text-success"><?=$_GET['message']?></h3>
+    <?php
+    endif;
+    ?>
     <!-- Page Title -->
     <div class="page-title">
         <div class="heading">
